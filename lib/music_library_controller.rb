@@ -22,7 +22,7 @@ class MusicLibraryController
       input = gets.strip.downcase
 
       case command
-        
+      when 'list songs'
 
 
     end
