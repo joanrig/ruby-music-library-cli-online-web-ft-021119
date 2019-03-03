@@ -67,7 +67,7 @@ class MusicLibraryController
     input = gets.strip
     Song.all.sort_by{|song| song.name}.each_with_index do |song, index|
       if input = index
-        puts "Playing #{song.name} by #{song.artist}."
+        puts "Playing #{song.name} by #{song.artist.name}."
       end
     end
   end
