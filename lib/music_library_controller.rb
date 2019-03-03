@@ -20,8 +20,9 @@ class MusicLibraryController
       puts "What would you like to do?"
 
       input = gets.strip.downcase
-      if input == 'list songs'
-        list_songs
+
+      case command
+        
 
 
     end
