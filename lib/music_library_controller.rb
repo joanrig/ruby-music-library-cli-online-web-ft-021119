@@ -40,6 +40,7 @@ class MusicLibraryController
     end
   end
 
+#why is a double equals not req. in if statement?
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets.strip
@@ -50,6 +51,7 @@ class MusicLibraryController
     end
   end
 
+#why is a double equals not req. in if statement?
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     input = gets.strip
@@ -61,7 +63,13 @@ class MusicLibraryController
   end
 
   def play_song
-    
+    puts "Which song number would you like to play?"
+    input = gets.strip
+    Song.all.sort_by{|song| song.name}.each_with_index do |song, index|
+      if input = index
+        puts "Playing #{song.name} by #{song.artist}."
+      end
+
   end
 
 
