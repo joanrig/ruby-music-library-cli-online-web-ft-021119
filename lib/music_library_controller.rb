@@ -21,7 +21,7 @@ class MusicLibraryController
 
       input = gets.strip.downcase
 
-      case command
+      case input
       when 'list songs'
         list_songs
       when 'list artists'
